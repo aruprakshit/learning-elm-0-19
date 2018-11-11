@@ -138,4 +138,6 @@ toGiphyUrl topic =
 
 gifDecoder : Decode.Decoder Giphy
 gifDecoder =
-    Decode.map2 Giphy (Decode.field "data" (Decode.field "image_url" Decode.string)) (Decode.field "data" (Decode.field "title" Decode.string))
+    Decode.map2 Giphy
+        (Decode.at [ "data", "image_url" ] Decode.string)
+        (Decode.at [ "data", "title" ] Decode.string)

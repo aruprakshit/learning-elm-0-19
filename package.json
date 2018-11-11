@@ -7,12 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "elm reactor",
     "repl": "elm repl",
-    "install": "elm install"
+    "install": "elm install",
+    "live": "elm-live"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "elm": "^0.19.0-bugfix2"
+    "elm": "^0.19.0-bugfix2",
+    "elm-live": "^3.2.3"
   }
 }
